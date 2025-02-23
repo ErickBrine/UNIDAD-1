@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <metac charset="UTF-8">
+    <metac name="viewport" content="widt=device-width, initial-scale=1.0">
+    <metac http-equiv="X-UA-compatible" conten="ie=edge">
+    <tittle></tittle>
+</head>
+<body>
+    <form>
+        <label for="b">b:</label>
+        <input type="b" id="b" name="b"><br><br>
+        <label for="h">h:</label>
+        <input type="h" id="h" name="h"><br><br>
+        <input type="button" value="Area del Triangulo" onclick="AreadelTriangulo()">
+        <p id="resultado"></p>
+
+        <script>
+            function AreadelTriangulo() {
+              var b = parseInt(document.getElementById("b").value);
+              var h = parseInt(document.getElementById("h").value);
+              var resultado = (b * h) / 2;
+              document.getElementById("resultado").innerHTML = "El resultado es: " + resultado;
+            }
+        </script>
+    </form>
+</body>
+</html>

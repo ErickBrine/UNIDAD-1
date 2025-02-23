@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <metac charset="UTF-8">
+    <metac name="viewport" content="widt=device-width, initial-scale=1.0">
+    <metac http-equiv="X-UA-compatible" conten="ie=edge">
+    <tittle></tittle>
+</head>
+<body>
+    <form>
+        <label for="r">r:</label>
+        <input type="r" id="r" name="r"><br><br>
+        <input type="button" value="Area del circulo" onclick="Areadelcirculo()">
+        <p id="resultado"></p>
+
+        <script>
+            function Areadelcirculo() {
+              var r = parseInt(document.getElementById("r").value);
+              var resultado = 3.1416 * r * r;
+              document.getElementById("resultado").innerHTML = "El resultado es: " + resultado;
+            }
+        </script>
+    </form>
+</body>
+</html>

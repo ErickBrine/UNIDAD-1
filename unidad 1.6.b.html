@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <metac charset="UTF-8">
+    <metac name="viewport" content="widt=device-width, initial-scale=1.0">
+    <metac http-equiv="X-UA-compatible" conten="ie=edge">
+    <tittle></tittle>
+</head>
+<body>
+    <form>
+        <label for="l">l:</label>
+        <input type="l" id="l" name="l"><br><br>
+        <label for="l">l:</label>
+        <input type="l" id="l" name="l"><br><br>
+        <label for="l">l:</label>
+        <input type="l" id="l" name="l"><br><br>
+        <input type="button" value="Perimetro del Triangulo" onclick="PerimetrodelTriangulo()">
+        <p id="resultado"></p>
+
+        <script>
+            function PerimetrodelTriangulo() {
+              var l = parseInt(document.getElementById("l").value);
+              var l = parseInt(document.getElementById("l").value);
+              var l = parseInt(document.getElementById("l").value);
+              var resultado = l + l + l;
+              document.getElementById("resultado").innerHTML = "El resultado es: " + resultado;
+            }
+        </script>
+    </form>
+</body>
+</html>
